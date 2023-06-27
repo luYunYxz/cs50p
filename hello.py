@@ -11,3 +11,5 @@ first, second = name.split()
 print(f"hello, \"my friend\" {name}" ,  end="")
 
 print(f"the first name = {first}")
+
+print(f"the second = {second}")
