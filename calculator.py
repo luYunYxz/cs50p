@@ -1,4 +1,10 @@
-x = float(input("what is x ? "))
-y =  float(input("what is y ? "))
-z = x / y
-print(f"{z:.2f}")
+def main():
+    x = float(input("waht is x?"))
+    sqr = square(x)
+    print("the square = : ",sqr)
+
+def square( x):
+    return pow(x ,2)
+
+
+main()
