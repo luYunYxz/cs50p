@@ -4,4 +4,5 @@
 this is the test many lines comments
 '''
 name = input("what is your name?")
-print("hello," + name)
+# print(*objects,seq=' ',end='\n'); 当传入多个参数的俄时候,以空格分割符,以\n作为结尾
+print("hello, \"my friend\"" , name , end="")
