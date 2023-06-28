@@ -3,4 +3,6 @@ from saying import hello
 
 def main():
     if len(sys.argv) >= 2:
-        hello(sas.argv[1])
+        hello(sys.argv[1])
+
+main()
