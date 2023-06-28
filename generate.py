@@ -1,5 +1,5 @@
 import random
 
-
-num = random.randint(1,10)
-print(num)
+cards = ["jack","king","queue"]
+random.shuffle(cards)
+print(cards)
