@@ -6,6 +6,6 @@ def main():
         print("Odd")
         
 def is_even(x):
-    return x % 2 == 0
+    return True if x % 2 == 0 else False
 
 main()
