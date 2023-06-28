@@ -3,9 +3,8 @@ y = int(input("what is y?"))
 
 
 if x < y:
-    print("x is less than y")
-if x > y:
+    print("x is less than y") 
+elif x > y:
     print("x is great than y")
-if x == y:
-    print("x is equals y")
-    
+else:
+    print("x is equal y") 
