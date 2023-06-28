@@ -1,2 +1,1 @@
-for _ in range(3):
-    print("Meow")
+print("Meow" * 3)
