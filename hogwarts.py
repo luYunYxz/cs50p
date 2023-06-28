@@ -5,7 +5,5 @@ students = {
     "Draco":"Slytherin"
 }
 
-print(students["Hermione"])
-print(students["Ron"])
-print(students["Harry"])
-print(students["Draco"])
+for student in students:
+    print(student ,students[student],sep="->")
