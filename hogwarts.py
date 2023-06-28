@@ -8,4 +8,3 @@ students = [
 
 for student in students:
     print(student["name"],student["house"],student["patronus"],sep=" , ")
-    
