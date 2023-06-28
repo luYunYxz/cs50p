@@ -1,4 +1,11 @@
-students = ["Hermione","Harry","Ron"]
+students = {
+    "Hermione":"Gryffindor",
+    "Harry":"Gryffyindor",
+    "Ron":"Gryffyiondor",
+    "Draco":"Slytherin"
+}
 
-for i in range(len(students)):
-    print(i+1,students[i])
+print(students["Hermione"])
+print(students["Ron"])
+print(students["Harry"])
+print(students["Draco"])
