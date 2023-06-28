@@ -1,6 +1,11 @@
-x = int(input("what is x? "))
+def main():
+    x = int(input("what is x? "))
+    if is_even(x):
+        print("Even")
+    else:
+        print("Odd")
+        
+def is_even(x):
+    return x % 2 == 0
 
-if  x % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
+main()
