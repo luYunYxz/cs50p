@@ -1,9 +1,10 @@
 
 def main():
-    print_column(3);
-
-def print_column(n):
+    print_square(5)
+def print_square(n):
     for _ in range(n):
-        print("#")
-
+        for _ in range(n):
+            print("#",end="")
+        print()
+        
 main()
