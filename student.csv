@@ -1,5 +1,5 @@
-name,house
-Hermione,"Gryffindor,Worla"
-Harry,Gryffindor
-Ron,Gryffindor
-Draco,Slytherin
+house,name
+"Gryffindor,Worla",Hermione
+Gryffindor,Harry
+Gryffindor,Ron
+Slytherin,Draco
