@@ -1,4 +1,13 @@
-with open("student.csv","r") as file:
+students = []
+
+with open("student.csv") as file:
     for line in file:
-        name,rom=lineg.rstrip().split(",")
-        print(f"{name} is in {rom}")
+        name,house = line.strip().split(",")
+        students.append({"name":name,"house":house})
+
+def get_name(student):
+    return student["name"]
+
+for student in sorted(students,key=get_name,reverse=True):
+    print(f"{student['name']} is in {student['house']}")
+
