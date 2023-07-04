@@ -1,6 +1,8 @@
-email = input("What is you emial? ").strip()
+email = input("what is your name? ").strip()
 
-if "@" in email and "." in email:
+first,second = email.split("@")
+
+if "." in second:
     print("Valid")
 else:
-    print("InValid")
+    print("Invalid")
