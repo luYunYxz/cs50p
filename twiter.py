@@ -1,6 +1,5 @@
 import re
 
 url = input("URL: ").strip()
-username = re.sub("^https?://(www\.)?twitter\.com/","",url)
-
-print(f"Username: {username}")
+if matcher:= re.match("^https?://(www\.)?twitter\.com/(.+)$",url):
+    print(f"Username: {matcher.group(2)}")
