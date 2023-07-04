@@ -1,8 +1,11 @@
-
+import re
 name = input("what is your name ? ").strip()
 
-if "," in name:
-    first,second = name.split(", ")
+matcher = re.search("(.+), *(.+)",name)
+
+if matcher:
+    first = matcher.group(1)
+    second = matcher.group(2)
     name = f"{first} {second}"
 
-print("hello",name)
+print(f"hello {name}")
