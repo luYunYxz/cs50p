@@ -8,9 +8,9 @@ def main():
     print(f"the {student.name} from {student.house}")
 
 def get_student():
-    student = Student()
-    student.name = input("what is your name: ") 
-    student.house = input("what is your house: ")
+    name = input("what is your name: ") 
+    house = input("what is your house: ")
+    student = Student(name,house)
     return student 
 
 if __name__ == "__main__":
