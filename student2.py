@@ -1,15 +1,12 @@
 
 def main():
-    name = get_name();
-    house = get_house()
-    print(f"the {name} from {house}")
+    student = get_student()
+    print(f"the {student[0]} from {student[1]}")
 
-def get_name():
-    name = input("what is your name: ")
-    return name
-def get_house():
+def get_student():
+    name = input("what is your name: ") 
     house = input("what is your house: ")
-    return house
+    return (name,house)
 
 if __name__ == "__main__":
     main()
