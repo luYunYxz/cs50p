@@ -8,7 +8,7 @@ def main():
 def get_student():
     name = input("what is your name: ") 
     house = input("what is your house: ")
-    return (name,house)
+    return [name,house]
 
 if __name__ == "__main__":
     main()
