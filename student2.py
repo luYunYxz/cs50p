@@ -1,14 +1,17 @@
+class Student:
+      ...
 
 def main():
     student = get_student()
-    if student[0] == "Padma":
-        student[1] = "Ravenclaw"
-    print(f"the {student[0]} from {student[1]}")
+    if student.name == "Padma":
+        student.house = "Ravenclaw"
+    print(f"the {student.name} from {student.house}")
 
 def get_student():
-    name = input("what is your name: ") 
-    house = input("what is your house: ")
-    return [name,house]
+    student = Student()
+    student.name = input("what is your name: ") 
+    student.house = input("what is your house: ")
+    return student 
 
 if __name__ == "__main__":
     main()
