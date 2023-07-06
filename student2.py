@@ -1,7 +1,10 @@
 class Student:
      def __init__(self,name,house) :
-         self.name = name
-         self.house = house
+        if not name:
+         raise ValueError("name is none")
+         
+        self.name = name
+        self.house = house
 
 def main():
     student = get_student()
