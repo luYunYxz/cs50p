@@ -1,9 +1,12 @@
-import sys
+import argparse
 
-if len(sys.argv) == 1:
+parser = argparse.ArgumentParser(description="number of moew ")
+parser.add_argument("-n",default = 1,type = int,help="number of times to meow")
+parser.add_argument("-a",default = 1,type = int,help="number of times to meow")
+
+args= parser.parse_args()
+
+for _ in range(args.n):
     print("meow")
-elif len(sys.argv) == 3 and sys.argv[1] =="-n":
-    for _ in range(int(sys.argv[2])):
-        print("Meow")
-else:
-    print("meow\n"*3,end="")
+
+print(args.a)
