@@ -1,5 +1,5 @@
 
 students = ["Hermine","Ron","Harry"]
 
-for i in range(len(students)):
+for i ,student in enumerate(students):
     print(i + 1 ," ",students[i])
