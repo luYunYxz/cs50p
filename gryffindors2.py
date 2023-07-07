@@ -1,5 +1,5 @@
 students = ["Hermine","Ron","Harry"]
 
-gryffindors = [{"name":student, "hourse":"Gryffindor"} for student in students]
+gryffindors =  {student:"Gryffindor" for student in students}
 
 print(gryffindors)
