@@ -6,10 +6,8 @@ students = [
 ]
 
 
-def is_gryfindoer(student):
-    return student["house"] == "Gryffindoer"
 
-gryfindoers = filter(is_gryfindoer,students) 
+gryfindoers = filter(lambda s:s["house"] == "Gryffindoer",students) 
 
 
 for gryfindoer in sorted(gryfindoers,key=lambda s:s["name"]):
