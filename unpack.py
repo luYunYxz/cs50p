@@ -1,7 +1,7 @@
 
-def total(gallos,slary,kunt):
-    return (gallos*10 + slary) * 17 + kunt
+def total(gallos,slary,knut):
+    return (gallos*10 + slary) * 17 + knut 
 
-cons = [10,50,21]
+coins = {"gallos":20,"slary":50,"knut":10}
 
-print(total(*cons))
+print(total(**coins))
