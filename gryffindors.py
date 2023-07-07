@@ -6,9 +6,11 @@ students = [
 ]
 
 
-gryfindoers = [
-    student["name"] for student in students if student["house"] == "Gryffindoer"
-]
+def is_gryfindoer(student):
+    return student["house"] == "Gryffindoer"
 
-for gryfindoer in sorted(gryfindoers):
-    print(gryfindoer)
+gryfindoers = filter(is_gryfindoer,students) 
+
+
+for gryfindoer in sorted(gryfindoers,key=lambda s:s["name"]):
+    print(gryfindoer["name"])
